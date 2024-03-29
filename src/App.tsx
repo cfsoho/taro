@@ -11,8 +11,6 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route key="h0" path="/" element={<Layout />}>
-          {/* <Route index element={<Home />} />
-          <Route path="crud" element={<Crud />} /> */}
           {routes.map(({ path, component }, index) => {
             const Page = component in Pages ? Pages[component as keyof typeof Pages] : NoPage;
             return <Route key={index} path={path} element={<Page />} />

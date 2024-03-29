@@ -81,8 +81,8 @@ const Home = () => {
                 {userData.length === 0 &&
                     <Col>
                         <Alert variant="danger">
-                            <AlertHeading>No Data Exists</AlertHeading>
-                            <div>Please insert Individual's name &amp; birthday to proceed.</div>
+                            <AlertHeading>尚未登入資料</AlertHeading>
+                            <div>請點選『新增生日』來登入資料</div>
                         </Alert>
                     </Col>
                 }
