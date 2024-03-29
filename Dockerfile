@@ -1,17 +1,14 @@
 # Use an official Node runtime as a parent image
-FROM node:16-alpine
+FROM node:16-alpine as build-stage
 
 # Set the working directory in the container
-WORKDIR /usr/src/app
+WORKDIR /app
 
-# Install app dependencies
-# A wildcard is used to ensure both package.json AND package-lock.json are copied
-# where available (npm@5+)
+# Install app dependencies by copying
+# package.json and package-lock.json first
 COPY package*.json ./
 
 RUN npm install
-# If you are building your code for production
-# RUN npm ci --only=production
 
 # Bundle app source inside the Docker image
 COPY . .
@@ -19,14 +16,14 @@ COPY . .
 # Build the app for production
 RUN npm run build
 
-# Use the official nginx image for a production build
-FROM nginx:stable-alpine
+# Use the official Nginx image for a production build
+FROM nginx:stable-alpine as production-stage
 
-# Copy the build output to replace the default nginx contents.
-COPY --from=0 /usr/src/app/build /usr/share/nginx/html
+# Copy the build output to replace the default Nginx contents.
+COPY --from=build-stage /app/dist /usr/share/nginx/html
 
 # Expose port 80 to the outside world
 EXPOSE 80
 
-# Start nginx
+# Start Nginx
 CMD ["nginx", "-g", "daemon off;"]
