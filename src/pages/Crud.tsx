@@ -115,6 +115,13 @@ const Crud = () => {
         });
     };
 
+    const handleReset = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        setName("");
+        setBirthday("");
+
+    }
+
     const maxBirthday = formatDate(new Date(new Date().setFullYear(new Date().getFullYear() - 18)));
     const minBirthday = formatDate(new Date(new Date().setFullYear(new Date().getFullYear() - 90)));
 
@@ -124,7 +131,7 @@ const Crud = () => {
                 <div>{errormsg}</div>
             </Alert>
         }
-        <Form onSubmit={handleSubmit}>
+        <Form onSubmit={handleSubmit} onReset={handleReset}>
             <Row>
                 <Form.Group as={Col} xs={12} md={6}>
                     <Form.Label>名字</Form.Label>
@@ -151,14 +158,14 @@ const Crud = () => {
             <Row>
                 <Form.Group as={Col} className="mt-3">
                     <Button variant="primary" size="sm" type="submit" className="me-2">
-                        Submit
+                        輸入
                     </Button>
                     <div className="vr" />
                     <Button variant="outline-primary" size="sm" type="reset">
-                        Reset
+                        取消
                     </Button>
                     {uid !== undefined &&
-                        <Link className="ms-5 btn-link" to="/form">Insert new</Link>
+                        <Link className="ms-5 btn-link" to="/form">新增</Link>
                     }
                 </Form.Group>
             </Row>

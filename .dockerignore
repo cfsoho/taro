@@ -1,0 +1,4 @@
+# You should exclude at least the following:
+
+node_modules
+npm-debug.log
