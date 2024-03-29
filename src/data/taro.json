@@ -1,0 +1,156 @@
+[
+    {
+        "idx": "0",
+        "name": "The Fool",
+        "name_zh": "愚者",
+        "desc": "代表新的開始、冒險精神和無憂無慮。",
+        "ph": 1
+    },
+    {
+        "idx": "1",
+        "name": "The Magician",
+        "name_zh": "魔術師",
+        "desc": "代表創造力、自信和行動力。",
+        "ph": 1
+    },
+    {
+        "idx": "2",
+        "name": "The High Priestess",
+        "name_zh": "女祭司",
+        "desc": "代表直覺、神秘和隱藏的知識。",
+        "ph": 0
+    },
+    {
+        "idx": "3",
+        "name": "The Empress",
+        "name_zh": "女皇",
+        "desc": "代表豐饒、創造力和母性。",
+        "ph": 1
+    },
+    {
+        "idx": "4",
+        "name": "The Emperor",
+        "name_zh": "皇帝",
+        "desc": "代表權威、穩定和控制。",
+        "ph": 1
+    },
+    {
+        "idx": "5",
+        "name": "The Hierophant",
+        "name_zh": "教皇",
+        "desc": "代表傳統、信仰和道德指導。",
+        "ph": 0
+    },
+    {
+        "idx": "6",
+        "name": "The Lovers",
+        "name_zh": "戀人",
+        "desc": "代表愛情、選擇和關係。",
+        "ph": 1
+    },
+    {
+        "idx": "7",
+        "name": "The Chariot",
+        "name_zh": "戰車",
+        "desc": "代表勝利、毅力和自我控制。",
+        "ph": 1
+    },
+    {
+        "idx": "8",
+        "name": "Strength",
+        "name_zh": "力量",
+        "desc": "代表勇氣、內在力量和慈悲。",
+        "ph": 1
+    },
+    {
+        "idx": "9",
+        "name": "The Hermit",
+        "name_zh": "隱士",
+        "desc": "代表內省、智慧和獨立。",
+        "ph": 0
+    },
+    {
+        "idx": "10",
+        "name": "Wheel of Fortune",
+        "name_zh": "命運之輪",
+        "desc": "代表命運、變化和循環。",
+        "ph": 0
+    },
+    {
+        "idx": "11",
+        "name": "Justice",
+        "name_zh": "正義",
+        "desc": "代表公平、真理和法律。",
+        "ph": 1
+    },
+    {
+        "idx": "12",
+        "name": "The Hanged Man",
+        "name_zh": "吊人",
+        "desc": "代表犧牲、放手和新的觀點。",
+        "ph": -1
+    },
+    {
+        "idx": "13",
+        "name": "Death",
+        "name_zh": "死神",
+        "desc": "代表結束、轉變和新的開始。",
+        "ph": -1
+    },
+    {
+        "idx": "14",
+        "name": "Temperance",
+        "name_zh": "節制",
+        "desc": "代表平衡、和諧和耐心。",
+        "ph": 1
+    },
+    {
+        "idx": "15",
+        "name": "The Devil",
+        "name_zh": "惡魔",
+        "desc": "代表束縛、誘惑和物質主義。",
+        "ph": -1
+    },
+    {
+        "idx": "16",
+        "name": "The Tower",
+        "name_zh": "塔",
+        "desc": "代表破壞、意外和啟示。",
+        "ph": -1
+    },
+    {
+        "idx": "17",
+        "name": "The Star",
+        "name_zh": "星星",
+        "desc": "代表希望、靈感和平靜。",
+        "ph": 1
+    },
+    {
+        "idx": "18",
+        "name": "The Moon",
+        "name_zh": "月亮",
+        "desc": "代表幻想、恐懼和不確定性。",
+        "ph": -1
+    },
+    {
+        "idx": "19",
+        "name": "The Sun",
+        "name_zh": "太陽",
+        "desc": "代表成功、活力和快樂。",
+        "ph": 1
+    },
+    {
+        "idx": "20",
+        "name": "Judgement",
+        "name_zh": "審判",
+        "desc": "代表復甦、評估和新的機會。",
+        "ph": 1
+    },
+    {
+        "idx": "21",
+        "name": "The World",
+        "name_zh": "世界",
+        "desc": "代表完成、整合和成就。",
+        "ph": 1
+    }
+]

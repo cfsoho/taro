@@ -1,0 +1,22 @@
+[
+    {
+        "path": "/",
+        "component": "Home",
+        "name": "主頁"
+    },
+    {
+        "path": "/form",
+        "component": "Crud",
+        "name": "增加生日"
+    },
+    {
+        "path": "/form/:uid",
+        "component": "Crud",
+        "name": "更改"
+    },
+    {
+        "path": "/:uid",
+        "component": "Detail",
+        "name": "詳細"
+    }
+]
