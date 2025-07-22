@@ -15,8 +15,13 @@
         "name": "更改"
     },
     {
-        "path": "/:uid",
-        "component": "Detail",
-        "name": "詳細"
+        "path": "/:uid/taro",
+        "component": "Taro",
+        "name": "塔羅"
+    },
+    {
+        "path": "/:uid/ZiWeiGrid",
+        "component": "ZiWeiGrid",
+        "name": "紫薇斗數"
     }
 ]
