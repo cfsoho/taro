@@ -1,0 +1,14 @@
+[
+  { "name": "兄弟宮", "index": 1 },
+  { "name": "父母宮", "index": 2 },
+  { "name": "福德宮", "index": 3 },
+  { "name": "夫妻宮", "index": 4 },
+  { "name": "命宮", "index": 5 },
+  { "name": "財帛宮", "index": 6 },
+  { "name": "子女宮", "index": 7 },
+  { "name": "官祿宮", "index": 8 },
+  { "name": "疾厄宮", "index": 9 },
+  { "name": "遷移宮", "index": 10 },
+  { "name": "奴僕宮", "index": 11 },
+  { "name": "田宅宮", "index": 12 }
+]

@@ -1,0 +1,324 @@
+[
+  {
+    "name": "台灣",
+    "cities": [
+      {
+        "regionCode": "TPE",
+        "label": "台北市",
+        "latitude": 25.033,
+        "longitude": 121.5654
+      },
+      {
+        "regionCode": "NTC",
+        "label": "新北市",
+        "latitude": 25.0124,
+        "longitude": 121.4657
+      },
+      {
+        "regionCode": "TYN",
+        "label": "桃園市",
+        "latitude": 24.9934,
+        "longitude": 121.3014
+      },
+      {
+        "regionCode": "HSC",
+        "label": "新竹市",
+        "latitude": 24.8038,
+        "longitude": 120.9647
+      },
+      {
+        "regionCode": "HSQ",
+        "label": "新竹縣",
+        "latitude": 24.8386,
+        "longitude": 121.0026
+      },
+      {
+        "regionCode": "MIA",
+        "label": "苗栗縣",
+        "latitude": 24.4893,
+        "longitude": 120.9417
+      },
+      {
+        "regionCode": "TXG",
+        "label": "台中市",
+        "latitude": 24.1477,
+        "longitude": 120.6736
+      },
+      {
+        "regionCode": "CHW",
+        "label": "彰化縣",
+        "latitude": 24.0685,
+        "longitude": 120.5577
+      },
+      {
+        "regionCode": "NAN",
+        "label": "南投縣",
+        "latitude": 23.9609,
+        "longitude": 120.9719
+      },
+      {
+        "regionCode": "YLN",
+        "label": "雲林縣",
+        "latitude": 23.7092,
+        "longitude": 120.5423
+      },
+      {
+        "regionCode": "CYI",
+        "label": "嘉義市",
+        "latitude": 23.4801,
+        "longitude": 120.4491
+      },
+      {
+        "regionCode": "CYQ",
+        "label": "嘉義縣",
+        "latitude": 23.4589,
+        "longitude": 120.574
+      },
+      {
+        "regionCode": "TNN",
+        "label": "台南市",
+        "latitude": 22.9997,
+        "longitude": 120.227
+      },
+      {
+        "regionCode": "KHH",
+        "label": "高雄市",
+        "latitude": 22.6273,
+        "longitude": 120.3014
+      },
+      {
+        "regionCode": "PIF",
+        "label": "屏東縣",
+        "latitude": 22.5519,
+        "longitude": 120.5485
+      },
+      {
+        "regionCode": "TTT",
+        "label": "台東縣",
+        "latitude": 22.7643,
+        "longitude": 121.1445
+      },
+      {
+        "regionCode": "HWA",
+        "label": "花蓮縣",
+        "latitude": 23.9872,
+        "longitude": 121.6015
+      },
+      {
+        "regionCode": "ILA",
+        "label": "宜蘭縣",
+        "latitude": 24.7021,
+        "longitude": 121.7378
+      },
+      {
+        "regionCode": "PEN",
+        "label": "澎湖縣",
+        "latitude": 23.5712,
+        "longitude": 119.5791
+      },
+      {
+        "regionCode": "KIN",
+        "label": "金門縣",
+        "latitude": 24.4344,
+        "longitude": 118.3171
+      },
+      {
+        "regionCode": "LIE",
+        "label": "連江縣",
+        "latitude": 26.1514,
+        "longitude": 119.9285
+      }
+    ]
+  },
+  {
+    "name": "中國",
+    "cities": [
+      {
+        "regionCode": "BJ",
+        "label": "北京市",
+        "latitude": 39.9042,
+        "longitude": 116.4074
+      },
+      {
+        "regionCode": "TJ",
+        "label": "天津市",
+        "latitude": 39.3434,
+        "longitude": 117.3616
+      },
+      {
+        "regionCode": "HEB",
+        "label": "河北省",
+        "latitude": 38.0428,
+        "longitude": 114.5149
+      },
+      {
+        "regionCode": "SX",
+        "label": "山西省",
+        "latitude": 37.8735,
+        "longitude": 112.5624
+      },
+      {
+        "regionCode": "NM",
+        "label": "內蒙古自治區",
+        "latitude": 40.8173,
+        "longitude": 111.7652
+      },
+      {
+        "regionCode": "LN",
+        "label": "遼寧省",
+        "latitude": 41.8354,
+        "longitude": 123.4291
+      },
+      {
+        "regionCode": "JL",
+        "label": "吉林省",
+        "latitude": 43.6661,
+        "longitude": 126.1923
+      },
+      {
+        "regionCode": "HLJ",
+        "label": "黑龍江省",
+        "latitude": 45.8038,
+        "longitude": 126.5349
+      },
+      {
+        "regionCode": "SH",
+        "label": "上海市",
+        "latitude": 31.2304,
+        "longitude": 121.4737
+      },
+      {
+        "regionCode": "JS",
+        "label": "江蘇省",
+        "latitude": 32.9711,
+        "longitude": 119.455
+      },
+      {
+        "regionCode": "ZJ",
+        "label": "浙江省",
+        "latitude": 29.1832,
+        "longitude": 120.0934
+      },
+      {
+        "regionCode": "AH",
+        "label": "安徽省",
+        "latitude": 31.8612,
+        "longitude": 117.2857
+      },
+      {
+        "regionCode": "FJ",
+        "label": "福建省",
+        "latitude": 26.0745,
+        "longitude": 119.2965
+      },
+      {
+        "regionCode": "JX",
+        "label": "江西省",
+        "latitude": 27.614,
+        "longitude": 115.7221
+      },
+      {
+        "regionCode": "SD",
+        "label": "山東省",
+        "latitude": 36.6683,
+        "longitude": 117.0206
+      },
+      {
+        "regionCode": "HA",
+        "label": "河南省",
+        "latitude": 34.7657,
+        "longitude": 113.7532
+      },
+      {
+        "regionCode": "HB",
+        "label": "湖北省",
+        "latitude": 30.5454,
+        "longitude": 114.3423
+      },
+      {
+        "regionCode": "HN",
+        "label": "湖南省",
+        "latitude": 28.1124,
+        "longitude": 112.9838
+      },
+      {
+        "regionCode": "GD",
+        "label": "廣東省",
+        "latitude": 23.379,
+        "longitude": 113.7633
+      },
+      {
+        "regionCode": "GX",
+        "label": "廣西壯族自治區",
+        "latitude": 23.8298,
+        "longitude": 108.7881
+      },
+      {
+        "regionCode": "HAIN",
+        "label": "海南省",
+        "latitude": 20.0174,
+        "longitude": 110.3492
+      },
+      {
+        "regionCode": "CQ",
+        "label": "重慶市",
+        "latitude": 29.563,
+        "longitude": 106.5516
+      },
+      {
+        "regionCode": "SC",
+        "label": "四川省",
+        "latitude": 30.2638,
+        "longitude": 102.8055
+      },
+      {
+        "regionCode": "GZ",
+        "label": "貴州省",
+        "latitude": 26.8429,
+        "longitude": 106.7942
+      },
+      {
+        "regionCode": "YN",
+        "label": "雲南省",
+        "latitude": 25.0453,
+        "longitude": 102.7097
+      },
+      {
+        "regionCode": "XZ",
+        "label": "西藏自治區",
+        "latitude": 29.6473,
+        "longitude": 91.1172
+      },
+      {
+        "regionCode": "SN",
+        "label": "陝西省",
+        "latitude": 34.2649,
+        "longitude": 108.9542
+      },
+      {
+        "regionCode": "GS",
+        "label": "甘肅省",
+        "latitude": 36.0594,
+        "longitude": 103.8343
+      },
+      {
+        "regionCode": "QH",
+        "label": "青海省",
+        "latitude": 36.6171,
+        "longitude": 101.7782
+      },
+      {
+        "regionCode": "NX",
+        "label": "寧夏回族自治區",
+        "latitude": 37.1987,
+        "longitude": 106.1581
+      },
+      {
+        "regionCode": "XJ",
+        "label": "新疆維吾爾自治區",
+        "latitude": 43.793,
+        "longitude": 87.6277
+      }
+    ]
+  }
+]

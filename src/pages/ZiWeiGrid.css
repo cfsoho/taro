@@ -1,0 +1,28 @@
+.ziwei-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* mapping 每個宮位在 4x4 的九宮格位置（中間不顯示） */
+.grid-box {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+/* 手動位置調整：以逆時針方向為例 */
+.grid-box.pos-1 { grid-column: 2; grid-row: 1; } /* 兄弟宮 */
+.grid-box.pos-2 { grid-column: 3; grid-row: 1; } /* 父母宮 */
+.grid-box.pos-3 { grid-column: 4; grid-row: 2; } /* 福德宮 */
+.grid-box.pos-4 { grid-column: 4; grid-row: 3; } /* 夫妻宮 */
+.grid-box.pos-5 { grid-column: 3; grid-row: 4; } /* 命宮 */
+.grid-box.pos-6 { grid-column: 2; grid-row: 4; } /* 財帛宮 */
+.grid-box.pos-7 { grid-column: 1; grid-row: 3; } /* 子女宮 */
+.grid-box.pos-8 { grid-column: 1; grid-row: 2; } /* 官祿宮 */
+.grid-box.pos-9 { grid-column: 2; grid-row: 2; } /* 疾厄宮 */
+.grid-box.pos-10 { grid-column: 3; grid-row: 2; } /* 遷移宮 */
+.grid-box.pos-11 { grid-column: 3; grid-row: 3; } /* 奴僕宮 */
+.grid-box.pos-12 { grid-column: 2; grid-row: 3; } /* 田宅宮 */ 
