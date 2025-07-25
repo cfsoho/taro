@@ -1,5 +1,5 @@
 # Use an official Node runtime as a parent image
-FROM node:16-alpine as build-stage
+FROM node:20-slim as build-stage
 
 # Set the working directory in the container
 WORKDIR /app

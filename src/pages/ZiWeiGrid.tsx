@@ -1,15 +1,15 @@
 // pages/ZiWeiGrid.tsx
-
 import React, { useEffect, useState } from "react";
-import { Card, Spinner } from "react-bootstrap";
+import { Card, Spinner, OverlayTrigger, Tooltip } from "react-bootstrap";
 import "./ZiWeiGrid.css";
 import { getZiweiPalaces } from "../utils/ziwei";
 import { convertToLunar } from '../utils/lunarConverter';
 
-import { Palace } from "../utils/palaces";
+import { Palace } from "../utils/types";
 import { useParams } from "react-router-dom";
 import { getUserByUid } from "../utils/userDb";
 import { EARTHLY_BRANCHES } from "../utils/constants";
+import { STAR_TYPE_LABELS } from "../utils/types";
 
 const gridMap: { [pos: number]: string } = {
   1: "pos-1",
@@ -43,9 +43,8 @@ const ZiWeiGrid: React.FC = () => {
         setPalaces(palaces);
         setMingIndex(mingIndex);
 
-        // 命宮干支
-        const lunar = convertToLunar(new Date(user.birthDatetime), user.birthLng);
-        setGanzhi(lunar.eightChar.getYear());
+        const gz = convertToLunar(new Date(user.birthDatetime));
+        setGanzhi(gz.lunar.getYearInGanZhi());
       }
 
       setLoading(false);
@@ -62,7 +61,7 @@ const ZiWeiGrid: React.FC = () => {
 
   return (
     <div className="ziwei-grid">
-      {palaces.map(({ name, position, index }) => {
+      {palaces.map(({ name, position, index, stars }) => {
         const branch = EARTHLY_BRANCHES[(index - 1) % 12];
         const isMing = position === mingIndex;
         return (
@@ -76,6 +75,21 @@ const ZiWeiGrid: React.FC = () => {
                 <div style={{ fontSize: "80%" }}>{branch}宮</div>
                 {isMing && (
                   <div style={{ fontSize: "80%", color: "red" }}>命宮（{ganzhi}）</div>
+                )}
+                {stars && stars.length > 0 && (
+                  <div className="stars">
+                    {stars.map((s, i) => (
+                      <OverlayTrigger
+                        key={i}
+                        placement="top"
+                        overlay={<Tooltip>{`${s.name}（${STAR_TYPE_LABELS[s.type]}）${s.transform ? ` - 化${s.transform}` : ''}`}</Tooltip>}
+                      >
+                        <div className={`star-label star-${s.type}`}>
+                          {s.name}{s.transform && <sup>{s.transform}</sup>}
+                        </div>
+                      </OverlayTrigger>
+                    ))}
+                  </div>
                 )}
               </Card.Body>
             </Card>

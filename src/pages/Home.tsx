@@ -65,9 +65,9 @@ const Home: React.FC = () => {
           const country = lat && lng ? detectCountryFromCoordinates(lat, lng) : null;
 
           return (
-            <Col key={uid} xs={12} md={6} lg={4}>
+            <Col key={uid} xs={12} md={6} lg={3}>
               <Card data-key={uid}>
-                <Card.Body>
+                <Card.Body onClick={() => DetailPgNav(uid, 'taro')}>
                   <Card.Title>{name}</Card.Title>
                   <Card.Subtitle>{birthDateOnly} {birthTime}</Card.Subtitle>
                   <Card.Subtitle>{cityData?.label && <div>{country} - {cityData.label}</div>}
@@ -77,12 +77,8 @@ const Home: React.FC = () => {
                       </div>
                     )}</Card.Subtitle>
 
-                  <Card.Text onClick={() => DetailPgNav(uid, 'taro')}>
+                  <Card.Text>
                     <div style={{ cursor: 'pointer', userSelect: 'none' }}><TaroBadge bd={birthDateOnly} /></div>
-                  </Card.Text>
-
-                  <Card.Text onClick={() => DetailPgNav(uid, 'ZiWeiGrid')}>
-                    紫薇
                   </Card.Text>
                 </Card.Body>
 

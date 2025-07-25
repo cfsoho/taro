@@ -18,7 +18,7 @@ export function getCorrectedZhi(date: Date, lng: number): string {
     date.getMinutes(),
     date.getSeconds()
   );
-  const localOffsetMin = date.getTimezoneOffset(); // 使用者所在時區相對 UTC 的 offset（單位：分鐘，東八區 = -480）
+  //const localOffsetMin = date.getTimezoneOffset(); // 使用者所在時區相對 UTC 的 offset（單位：分鐘，東八區 = -480）
 
   // 計算當地時間對應的地方時（Local Mean Time）
   const standardMeridian = Math.round(lng / 15) * 15; // 與出生地經度最接近的整數時區子午線

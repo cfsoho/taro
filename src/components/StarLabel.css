@@ -1,0 +1,27 @@
+.star-label {
+  font-weight: bold;
+  margin: 2px;
+  display: inline-block;
+}
+
+.transform {
+  margin-left: 2px;
+  font-size: 0.65em;
+  vertical-align: super;
+  padding: 0 3px;
+  border-radius: 3px;
+  color: white;
+}
+
+.transform.祿 {
+  background-color: #4caf50; /* 綠色 */
+}
+.transform.權 {
+  background-color: #2196f3; /* 藍色 */
+}
+.transform.科 {
+  background-color: #9c27b0; /* 紫色 */
+}
+.transform.忌 {
+  background-color: #f44336; /* 紅色 */
+}

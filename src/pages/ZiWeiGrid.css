@@ -11,7 +11,35 @@
 .grid-box {
   grid-column: span 1;
   grid-row: span 1;
+  display: flex;
+  aspect-ratio: 1 / 1;
 }
+
+.grid-box .card {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.grid-box .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 8px;
+}
+
+.stars {
+  max-height: none;
+  overflow-y: visible;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: center;
+}
+
 
 /* 手動位置調整：以逆時針方向為例 */
 .grid-box.pos-1 { grid-column: 2; grid-row: 1; } /* 兄弟宮 */
@@ -26,3 +54,57 @@
 .grid-box.pos-10 { grid-column: 3; grid-row: 2; } /* 遷移宮 */
 .grid-box.pos-11 { grid-column: 3; grid-row: 3; } /* 奴僕宮 */
 .grid-box.pos-12 { grid-column: 2; grid-row: 3; } /* 田宅宮 */ 
+
+
+.star-label {
+  font-size: 80%;
+  margin-top: 2px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  display: inline-block;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.star-label:hover {
+  transform: scale(1.05);
+  font-weight: bold;
+}
+
+.star-main {
+  background-color: #fce4ec;
+  color: #ad1457;
+}
+
+.star-lucky {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+.star-evil {
+  background-color: #ffebee;
+  color: #b71c1c;
+}
+
+.star-transform {
+  background-color: #f3e5f5;
+  color: #6a1b9a;
+}
+
+.star-life {
+  background-color: #fff3e0;
+  color: #ef6c00;
+}
+
+.star-body {
+  background-color: #f1f8e9;
+  color: #33691e;
+}
+
+
+
+.star-label sup.transform-mark {
+  font-size: 60%;
+  color: gold;
+  margin-left: 4px;
+}
